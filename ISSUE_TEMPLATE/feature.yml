@@ -1,0 +1,31 @@
+name: Feature
+description: New behaviour or a change to existing behaviour
+type: Feature
+projects: ["Symeres/7"]
+body:
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Who needs this, and what can they do afterwards that they can't now?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Background, constraints, examples, screenshots.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Testable outcomes, not steps. One per line. Bigger than one pull request? Split it into sub-issues.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Files or folders in the repository to read first.

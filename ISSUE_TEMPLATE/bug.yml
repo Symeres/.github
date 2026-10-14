@@ -1,0 +1,32 @@
+name: Bug
+description: Something doesn't work as it should
+type: Bug
+projects: ["Symeres/7"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: What you did, what you expected, and what happened instead. Include error messages or screenshots.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1. 
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Environment, version, how often it happens, who is affected.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] The steps above no longer reproduce the problem
+        - [ ] A test covers it

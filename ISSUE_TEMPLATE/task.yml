@@ -1,0 +1,31 @@
+name: Task
+description: A piece of work that fits in one pull request
+type: Task
+projects: ["Symeres/7"]
+body:
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: The problem or need, for a reader who doesn't know the code.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Background, constraints, links.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Testable outcomes, not steps. One per line.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Files or folders in the repository to read first.
